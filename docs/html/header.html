@@ -1,140 +1,203 @@
-<div class="header">
-    <div class="pc">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>후키-header</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="pc">
         <div class="wd120">
-            <div class="header_left">
-                <ul>
-                    <li class="logo">
-                        <a href="#">
-                            <img src="../img/logo.png" alt="">
-                        </a>
-                    </li>
-                    <li><a href="../html/localCampaign.html">지역</a></li>
-                    <li><a href="../html/productCampaign.html">제품</a></li>
-                    <li><a href="../html/reviewCampaign.html">구매평</a></li>
-                    <li><a href="../html/newsCampaign.html">기자단</a></li>
-                </ul>
+          <div class="header_left">
+            <ul>
+              <li>
+                <a href="#"><img src="../img/logo.png" alt="" /></a>
+              </li>
+              <li><a href="../html/localCampaign.html">지역</a></li>
+              <li><a href="../html/productCampaign.html">제품</a></li>
+              <li><a href="../html/reviewCampaign.html">구매평</a></li>
+              <li><a href="../html/newsCampaign.html">기자단</a></li>
+            </ul>
+          </div>
+
+          <div class="header_right">
+            <form class="search" action="" method="get">
+              <input type="text" class="search_txt" placeholder="검색어 입력" />
+              <input type="submit" class="search_btn" value="검색" />
+            </form>
+            <div class="profile">
+              <img src="../img/header_profile.png" alt="" />
             </div>
-        
-            <div class="header_right">
-                <form class="search" action="" method="get">
-                    <input type="text" class="search_txt" placeholder="검색어 입력">
-                    <input type="submit" class="search_btn" value="검색">
-                </form>
-        
-                <div class="profile">
-                    <img src="../img/header_profile.png" alt="">
-                </div>
-                <div class="notify"></div>
-            </div>
+            <div class="notify"></div>
+          </div>
         </div>
+
         <div class="header_bottom">
-            <div class="wd120">
-                <div class="bottom_left">
-                    <div class="bottom_btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-        
-                    <a href="#" class="open">오늘오픈</a>
-                </div>
-    
-                <div class="bottom_right">
-                    <ul>
-                        <li><a href="#">신청한 캠페인</a></li>
-                        <li><a href="#">선정된 캠페인</a></li>
-                        <li><a href="#">등록된 캠페인</a></li>
-                    </ul>
-                </div>
+          <div class="wd120">
+            <div class="bottom_left">
+              <img
+                src="../img/ico_menu.svg"
+                alt="Menu"
+                class="menu-toggle"
+                onclick="toggleMenu()"
+              />
+              <a href="#" class="open">오늘오픈</a>
             </div>
-        </div>
-    </div>
 
-    <div class="mobile mt40">
+            <div class="bottom_right">
+              <ul>
+                <li><a href="#">신청한 캠페인</a></li>
+                <li><a href="#">선정된 캠페인</a></li>
+                <li><a href="#">등록된 캠페인</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-menu" id="sideMenu">
+        <div class="close-btn" onclick="toggleMenu()">
+          <img src="../img/ico_menuClose.svg" alt="" />
+        </div>
+        <div class="side-menu-a">
+          <div class="mo_menu mo_loca">
+            <p>지역</p>
+            <ul>
+              <li><a href="#">맛집</a></li>
+              <li><a href="#">뷰티</a></li>
+              <li><a href="#">숙박</a></li>
+              <li><a href="#">숙박</a></li>
+              <li><a href="#">기타</a></li>
+            </ul>
+          </div>
+          <div class="mo_menu mo_pd">
+            <p>제품</p>
+            <ul>
+              <li><a href="#">생활&건강</a></li>
+              <li><a href="#">디지털&가전</a></li>
+              <li><a href="#">패션&미용</a></li>
+              <li><a href="#">식품</a></li>
+              <li><a href="#">기타</a></li>
+            </ul>
+          </div>
+          <div class="mo_menu mo_review">
+            <p>구매평</p>
+            <ul>
+              <li><a href="#">구매평</a></li>
+              <li><a href="#">구매평&리뷰</a></li>
+            </ul>
+          </div>
+          <div class="mo_menu mo_press">
+            <p>기자단</p>
+            <ul>
+              <li><a href="#">원고형</a></li>
+              <li><a href="#">참여형</a></li>
+              <li><a href="#">회수형</a></li>
+            </ul>
+          </div>
+          <div class="mo_menu mo_customer">
+            <p>고객센터</p>
+            <ul>
+              <li><a href="#">1:1문의</a></li>
+              <li><a href="#">공지사항</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+      <!-- 모바일 메뉴 -->
+      <!-- <div class="mobile mt40">
         <form class="search" action="" method="get">
-            <input type="text" class="search_txt" placeholder="검색어 입력">
-            <input type="submit" class="search_btn" value="검색">
+          <input type="text" class="search_txt" placeholder="검색어 입력" />
+          <input type="submit" class="search_btn" value="검색" />
         </form>
-    </div>
+      </div> -->
 
-    <nav class="mobile_nav">
-        <ul class="flex p20 pl30 pr30">
-            <li class="active">
-                <a href="#" class="flex-column">
-                    <div class="nav_img home"></div>
-                    <div class="nav_txt">홈</div>
-                </a>
-            </li>
-            <li class="cate_show">
-                <div class="flex-column">
-                    <div class="nav_img menu"></div>
-                    <div class="nav_txt">카테고리</div>
-                </div>
-            </li>
-            <li>
-                <a href="#" class="flex-column">
-                    <div class="nav_img mypage"></div>
-                    <div class="nav_txt">마이페이지</div>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="flex-column">
-                    <div class="nav_img cs"></div>
-                    <div class="nav_txt">고객센터</div>
-                </a>
-            </li>
-        </ul>
-        
-        
-        <div class="mobile_cate">
-            <div class="cate_cont">
-                <div class="cate_close">
-                    <span></span>
-                    <span></span>
-                </div>
-    
-                <div class="cate_grid">
-                    <div>
-                        <div class="cate_tit mt20">지역</div>
-                        <ul>
-                            <li><a href="#">맛집</a></li>
-                            <li><a href="#">뷰티</a></li>
-                            <li><a href="#">숙박</a></li>
-                            <li><a href="#">문화</a></li>
-                            <li><a href="#">기타</a></li>
-                            <li><a href="#"><span></span></a></li>
-                        </ul>
-                        <div class="cate_tit mt30">제품</div>
-                        <ul>
-                            <li><a href="#">생활&건강</a></li>
-                            <li><a href="#">디지털&가전</a></li>
-                            <li><a href="#">패션&미용</a></li>
-                            <li><a href="#">식품</a></li>
-                            <li><a href="#">기타</a></li>
-                            <li><a href="#"><span></span></a></li>
-                        </ul>
-                        <div class="cate_tit mt30">구매평</div>
-                        <ul>
-                            <li><a href="#">구매평</a></li>
-                            <li><a href="#">구매평&리뷰</a></li>
-                        </ul>
-                        <div class="cate_tit mt30">기자단</div>
-                        <ul>
-                            <li><a href="#">원고형</a></li>
-                            <li><a href="#">참고형</a></li>
-                            <li><a href="#">회수형</a></li>
-                            <li><a href="#"><span></span></a></li>
-                        </ul>
-                        <div class="cate_tit mt30">고객센터</div>
-                        <ul>
-                            <li><a href="#">1:1문의</a></li>
-                            <li><a href="#">공지사항</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <nav class="mobile_nav">
+        <ul>
+          <li class="mo_nav">
+            <a href="#" class="flex-column">
+              <img class="nav_img home" src="../img/mobile_home.svg" alt="홈" />
+              <div class="nav_txt">홈</div>
+            </a>
+          </li>
+          <li class="mo_nav cate_show">
+            <div class="flex-column">
+              <img
+                class="nav_img menu"
+                src="../img/mobile_menu.svg"
+                alt="카테고리"
+              />
+              <div class="nav_txt" onclick="toggleMenu()">카테고리</div>
             </div>
-        </div>
-        <div class="mBG"></div>
-    </nav>
+          </li>
+          <li class="mo_nav">
+            <a href="#" class="mo_nav flex-column">
+              <img
+                class="nav_img mypage"
+                src="../img/mobile_mypage.svg"
+                alt="홈"
+              />
+              <div class="nav_txt">마이페이지</div>
+            </a>
+          </li>
+          <li class="mo_nav">
+            <a href="#" class="mo_navflex-column">
+              <img
+                class="nav_img cs"
+                src="../img/mobile_cs.svg"
+                alt="고객센터"
+              />
+              <div class="nav_txt">고객센터</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <script>
+      // 햄버거메뉴
+      function toggleMenu() {
+        const sideMenu = document.getElementById("sideMenu");
+        const overlay = document.getElementById("overlay");
+        sideMenu.classList.toggle("active");
+        overlay.classList.toggle("active");
+      }
 
-</div>
+      $(document).ready(function () {
+        // Apply the default color to the item with the 'click' class on page load
+        $(".mo_nav.click").find(".nav_txt").css("color", "#4425FF");
+        $(".mo_nav.click")
+          .find(".nav_img")
+          .css(
+            "filter",
+            "brightness(0) saturate(100%) invert(32%) sepia(91%) saturate(3185%) hue-rotate(229deg) brightness(92%) contrast(106%)"
+          );
+
+        // Attach click event to all <li> elements with class .mo_nav
+        $(".mo_nav").click(function () {
+          // Remove 'click' class from all items and reset styles
+          $(".mo_nav").removeClass("click");
+          $(".nav_txt").css("color", ""); // Reset text color to default
+          $(".nav_img").css("filter", ""); // Reset icon color to default
+
+          // Add 'click' class to the clicked item
+          $(this).addClass("click");
+
+          // Change text color of the clicked item
+          $(this).find(".nav_txt").css("color", "#4425FF");
+
+          // Change icon color using CSS filter for the clicked item
+          $(this)
+            .find(".nav_img")
+            .css(
+              "filter",
+              "brightness(0) saturate(100%) invert(32%) sepia(91%) saturate(3185%) hue-rotate(229deg) brightness(92%) contrast(106%)"
+            );
+        });
+      });
+    </script>
+  </body>
+</html>

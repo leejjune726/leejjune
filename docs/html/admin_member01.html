@@ -5,426 +5,401 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>HUKI admin</title>
+    <title></title>
 
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/style.css"/>
     <link rel="stylesheet" href="../css/mobile.css"/>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <script src="../script/jquery-3.6.0.js"></script>
 	
   </head>
   <body>
 		
     <main id="admin_member01">
-        <section class="section_grid mb_block">
-            <div id="sidebar"></div>
-
-            <div class="mb_only mb30">
-                <div class="mb_header">
-                    <ul class="d-flex align-item-center justify-content-between">
-                        <li><a href="" class="hamburger"><img src="../img/img-menu.svg" alt="메뉴"></a></li>
-                        <li><a href=""><img src="../img/img-home.svg" alt="홈"></a></li>
-                        <li><a href=""><img src="../img/img-search.svg" alt="검색"></a></li>
+        <section class="section_grid">
+            <div class="section_left pc">
+                <div class="left_top">
+                    <div class="admin_logo">
+                        <img src="../img/logo.png" alt="">
+                    </div>
+    
+                    <div class="admin_profile">
+                        <img src="../img/admin_profile.png" alt="">
+                        <p><span class="strong600">관리자</span>님 반갑습니다.</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="../html/main.html">
+                            <span class="icon_before icon_home">Home</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="gray40 admin">Member</p>
+                <ul class="active">
+                    <li>
+                        <span class="icon_before icon_user">회원 관리</span>
+                    </li>
+                    <ul class="sub_list">
+                        <li class="active"><a href=""><span>회원 목록</span></a></li>
+                        <li><a href=""><span>패널티 회원 관리</span></a></li>
                     </ul>
-                </div>
-                <div class="mb_title text-center">
-                    <h2 class="txt03">회원 목록</h2>
-                </div>
+                </ul>
+                <p class="gray40 admin mt20">Campaign</p>
+                <ul>
+                    <li>
+                        <span class="icon_before icon_campaign">캠페인 관리</span>
+                    </li>
+                    <ul class="sub_list">
+                        <li><a href=""><span>캠페인 등록</span></a></li>
+                        <li><a href=""><span>진행중인 캠페인</span></a></li>
+                        <li><a href=""><span>리뷰 등록중 캠페인</span></a></li>
+                        <li><a href=""><span>리뷰 관리</span></a></li>
+                    </ul>
+                </ul>
+                <p class="gray40 admin mt20">Board</p>
+                <ul>
+                    <li>
+                        <span class="icon_before icon_board">게시판 관리</span>
+                    </li>
+                    <ul class="sub_list">
+                        <li><a href=""><span>공지사항</span></a></li>
+                        <li><a href=""><span>1:1 문의</span></a></li>
+                        <li><a href=""><span>광고 문의</span></a></li>
+                    </ul>
+                </ul>
+                <p class="gray40 admin mt20">Setting</p>
+                <ul>
+                    <li>
+                        <span class="icon_before icon_setting">환경 설정</span>
+                    </li>
+                    <ul class="sub_list">
+                        <li><a href=""><span>배너 관리</span></a></li>
+                        <li><a href=""><span>1:1 문의</span></a></li>
+                        <li><a href=""><span>위젯 관리</span></a></li>
+                    </ul>
+                </ul>
             </div>
 
-            <div class="section_right"> 
-                
-                <h2 class="ti1">회원 목록</h2>
-                <div class="d-flex justify-content-between align-item-end">
-                    <div>
-                        <span class="blue strong500">123</span>명
-                        <button type="button" class="report_btn gray strong600 font15 ml30">알림 보내기</button>
+            <div class="section_right">
+                <div class="mypage_right_tit">회원 목록</div>
 
-                        <!-- 알림 보내기 popup -->
-                        <div class="report_popup mt60">
-                            <div class="report_cont">
-                                <div class="report_close">
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                <form class="search flex-end pc" action="" method="get">
+                    <input type="text" class="search_txt" placeholder="검색어 입력">
+                    <input type="submit" class="search_btn" value="검색">
+                </form>
 
-                                <div class="report_tit font20 strong600">알림함</div>
+                <div class="mt20 mb20">
+                    <span class="blue strong500">123</span>명
+                    
+                    <button type="button" class="report_btn gray strong600 font15 ml30">알림 보내기</button>
 
-                                <div class="report_sub mt30 blue strong600">알림 보내기</div>
-
-                                <form class="mt20" action="">
-                                    <input type="text" class="common_input" placeholder="아이디">
-                                    <textarea class="textarea mt10" name="" id="" placeholder="내용"></textarea>
-                                </form>
-
-                                <div class="flex-center">
-                                    <button class="modify_btn mt20 report_send" type="">알림 보내기</button>
-                                </div>
+                    <div class="report_popup mt60">
+                        <div class="report_cont">
+                            <div class="report_close">
+                                <span></span>
+                                <span></span>
                             </div>
-                        </div>
 
-                    </div>
-                    <div class="pc_only">                        
-                        <div class="search_bar">
-                            <input type="search" class="search_input" placeholder="검색어 입력">
-                            <i class="ri-search-line"></i>
+                            <div class="report_tit font20 strong600">알림함</div>
+
+                            <div class="report_sub mt30 blue strong600">알림 보내기</div>
+
+                            <form class="mt20" action="">
+                                <input type="text" class="common_input" placeholder="아이디">
+                                <textarea class="textarea mt10" name="" id="" placeholder="내용"></textarea>
+                            </form>
+
+                            <div class="flex-center">
+                                <button class="modify_btn mt20 report_send" type="">알림 보내기</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="table-wrap mt20 pc_only">
-                    <table class="table text-center">
-                        <caption class="sr_only">회원목록 항목 : 회원명, id , 최종접속, 체험단 신청 횟수, 리뷰 완료 횟수, 패널티 횟수, 보유 포인트</caption>
-                        <colgroup>
-                            <col width="5%">
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                            <col>
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="row">
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_1" name="check_01">
-                                        <label for="check_01_1"></label>
-                                    </div>
-                                </th>
-                                <th scope="row">회원명</th>
-                                <th scope="row">ID</th>
-                                <th scope="row">최종접속</th>
-                                <th scope="row">체험단 신청 횟수</th>
-                                <th scope="row">리뷰 완료 횟수</th>
-                                <th scope="row">패널티 횟수</th>
-                                <th scope="row">보유 포인트</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_2" name="check_01">
-                                        <label for="check_01_2"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_3" name="check_01">
-                                        <label for="check_01_3"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_4" name="check_01">
-                                        <label for="check_01_4"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_5" name="check_01">
-                                        <label for="check_01_5"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_6" name="check_01">
-                                        <label for="check_01_6"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_7" name="check_01">
-                                        <label for="check_01_7"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_8" name="check_01">
-                                        <label for="check_01_8"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_9" name="check_01">
-                                        <label for="check_01_9"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_10" name="check_01">
-                                        <label for="check_01_10"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_11" name="check_01">
-                                        <label for="check_01_11"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_12" name="check_01">
-                                        <label for="check_01_12"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="input_check">
-                                        <input type="checkbox" class="" value="" id="check_01_13" name="check_01">
-                                        <label for="check_01_13"></label>
-                                    </div>
-                                </td>
-                                <td>홍길동</td>
-                                <td>abc@naver.com</td>
-                                <td>2024.08.11</td>
-                                <td>100</td>
-                                <td>80</td>
-                                <td>10</td>
-                                <td>10,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="member_grid mt20">
+                    <div class="member_list">
+                        <ul class="member_grid_tit strong500">
+                            <li class="flex">
+                                <label class="flex mt0">
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p>회원명</p>
+                                </label>
+                            </li>
+                            <li>ID</li>
+                            <li class="pc">최종접속</li>
+                            <li class="pc">체험단 선정 횟수</li>
+                            <li class="pc">리뷰 완료 횟수</li>
+                            <li class="pc">패널티 횟수</li>
+                            <li class="pc">보유 포인트</li>
+                        </ul>
+                    </div>
+                    <div class="gray member_list">
+                        <ul>
+                            <li class="flex">
+                                <label class="flex mt0">
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p><a href="#">홍길동</a></p>
+                                </label>
+                            </li>
+                            <li>
+                                abc@naver.com
+                            </li>
+                            <li class="pc">
+                                2024.08.11
+                            </li>
+                            <li class="pc">
+                                100
+                            </li>
+                            <li class="pc">
+                                80
+                            </li>
+                            <li class="pc">
+                                10
+                            </li>
+                            <li class="pc">
+                                10,000
+                            </li>
+                        </ul>
 
-                <div class="mb_only member_table">
-                    <ul class="mb_table-title">
-                        <li>
-                            <div class="input_check">
-                                <input type="checkbox" class="" value="" id="check_02_1" name="check_02">
-                                <label for="check_02_1"></label>
+                        <div class="member_sub_list">
+                            <div>
+                                <span class="black">최종접속</span>
+                                <span class="gray">2024.08.11</span>
                             </div>
-                        </li>
-                        <li>회원명</li>
-                        <li style="max-width: 100px; width: 100%">ID</li>
-                        <li><button type="button" class="btn05"><span class="sr_only">펼치기</span></button></li>
-                    </ul>
-                    <ul class="mb_table-content">
-                        <li>
-                            <div class="input_check">
-                                <input type="checkbox" class="" value="" id="check_02_2" name="check_02">
-                                <label for="check_02_2"></label>
+                            <div>
+                                <span class="black">체험단 선정 횟수</span>
+                                <span class="gray">100</span>
                             </div>
-                        </li>
-                        <li>홍길동</li>
-                        <li>abc@naver.com</li>
-                        <li><button type="button" class="btn05"><span class="sr_only">펼치기</span></button></li>
-                        <table class="table mb_table02 text-left">
-                            <caption class="sr_only">최종접속, 체험단 선정횟수, 리뷰 완료 횟수, 패널티 횟수, 보유 포인트</caption>
-                            <colgroup>
-                                <col width="50%">
-                                <col>
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">최종접속</th>
-                                    <td>2024.08.11</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">체험단 선정 횟수</th>
-                                    <td>100</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">리뷰 완료 횟수</th>
-                                    <td>80</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">패널티 횟수</th>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">보유 포인트</th>
-                                    <td>10,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </ul>
-                    <ul class="mb_table-content">
-                        <li>
-                            <div class="input_check">
-                                <input type="checkbox" class="" value="" id="check_02_2" name="check_02">
-                                <label for="check_02_2"></label>
+                            <div>
+                                <span class="black">리뷰 완료 횟수</span>
+                                <span class="gray">80</span>
                             </div>
-                        </li>
-                        <li>홍길동</li>
-                        <li>abc@naver.com</li>
-                        <li><button type="button" class="btn05"><span class="sr_only">펼치기</span></button></li>
-                        <table class="table mb_table02 text-left active">
-                            <caption class="sr_only">최종접속, 체험단 선정횟수, 리뷰 완료 횟수, 패널티 횟수, 보유 포인트</caption>
-                            <colgroup>
-                                <col width="50%">
-                                <col>
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">최종접속</th>
-                                    <td>2024.08.11</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">체험단 선정 횟수</th>
-                                    <td>100</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">리뷰 완료 횟수</th>
-                                    <td>80</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">패널티 횟수</th>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">보유 포인트</th>
-                                    <td>10,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </ul>
-                    <ul class="mb_table-content">
-                        <li>
-                            <div class="input_check">
-                                <input type="checkbox" class="" value="" id="check_02_2" name="check_02">
-                                <label for="check_02_2"></label>
+                            <div>
+                                <span class="black">패널티 횟수</span>
+                                <span class="gray">10</span>
                             </div>
-                        </li>
-                        <li>홍길동</li>
-                        <li>abc@naver.com</li>
-                        <li><button type="button" class="btn05"><span class="sr_only">펼치기</span></button></li>
-                        <table class="table mb_table02 text-left">
-                            <caption class="sr_only">최종접속, 체험단 선정횟수, 리뷰 완료 횟수, 패널티 횟수, 보유 포인트</caption>
-                            <colgroup>
-                                <col width="50%">
-                                <col>
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">최종접속</th>
-                                    <td>2024.08.11</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">체험단 선정 횟수</th>
-                                    <td>100</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">리뷰 완료 횟수</th>
-                                    <td>80</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">패널티 횟수</th>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">보유 포인트</th>
-                                    <td>10,000</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </ul>
+                            <div>
+                                <span class="black">보유포인트</span>
+                                <span class="gray">10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gray member_list">
+                        <ul>
+                            <li class="flex">
+                                <label class="flex mt0">
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p><a href="#">홍길동</a></p>
+                                </label>
+                            </li>
+                            <li>
+                                abc@naver.com
+                            </li>
+                            <li class="pc">
+                                2024.08.11
+                            </li>
+                            <li class="pc">
+                                100
+                            </li>
+                            <li class="pc">
+                                80
+                            </li>
+                            <li class="pc">
+                                10
+                            </li>
+                            <li class="pc">
+                                10,000
+                            </li>
+                        </ul>
+
+                        <div class="member_sub_list">
+                            <div>
+                                <span class="black">최종접속</span>
+                                <span class="gray">2024.08.11</span>
+                            </div>
+                            <div>
+                                <span class="black">체험단 선정 횟수</span>
+                                <span class="gray">100</span>
+                            </div>
+                            <div>
+                                <span class="black">리뷰 완료 횟수</span>
+                                <span class="gray">80</span>
+                            </div>
+                            <div>
+                                <span class="black">패널티 횟수</span>
+                                <span class="gray">10</span>
+                            </div>
+                            <div>
+                                <span class="black">보유포인트</span>
+                                <span class="gray">10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gray member_list">
+                        <ul>
+                            <li class="flex">
+                                <label class="flex mt0">
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p><a href="#">홍길동</a></p>
+                                </label>
+                            </li>
+                            <li>
+                                abc@naver.com
+                            </li>
+                            <li class="pc">
+                                2024.08.11
+                            </li>
+                            <li class="pc">
+                                100
+                            </li>
+                            <li class="pc">
+                                80
+                            </li>
+                            <li class="pc">
+                                10
+                            </li>
+                            <li class="pc">
+                                10,000
+                            </li>
+                        </ul>
+
+                        <div class="member_sub_list">
+                            <div>
+                                <span class="black">최종접속</span>
+                                <span class="gray">2024.08.11</span>
+                            </div>
+                            <div>
+                                <span class="black">체험단 선정 횟수</span>
+                                <span class="gray">100</span>
+                            </div>
+                            <div>
+                                <span class="black">리뷰 완료 횟수</span>
+                                <span class="gray">80</span>
+                            </div>
+                            <div>
+                                <span class="black">패널티 횟수</span>
+                                <span class="gray">10</span>
+                            </div>
+                            <div>
+                                <span class="black">보유포인트</span>
+                                <span class="gray">10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gray member_list">
+                        <ul>
+                            <li class="flex">
+                                <label class="flex mt0">
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p><a href="#">홍길동</a></p>
+                                </label>
+                            </li>
+                            <li>
+                                abc@naver.com
+                            </li>
+                            <li class="pc">
+                                2024.08.11
+                            </li>
+                            <li class="pc">
+                                100
+                            </li>
+                            <li class="pc">
+                                80
+                            </li>
+                            <li class="pc">
+                                10
+                            </li>
+                            <li class="pc">
+                                10,000
+                            </li>
+                        </ul>
+
+                        <div class="member_sub_list">
+                            <div>
+                                <span class="black">최종접속</span>
+                                <span class="gray">2024.08.11</span>
+                            </div>
+                            <div>
+                                <span class="black">체험단 선정 횟수</span>
+                                <span class="gray">100</span>
+                            </div>
+                            <div>
+                                <span class="black">리뷰 완료 횟수</span>
+                                <span class="gray">80</span>
+                            </div>
+                            <div>
+                                <span class="black">패널티 횟수</span>
+                                <span class="gray">10</span>
+                            </div>
+                            <div>
+                                <span class="black">보유포인트</span>
+                                <span class="gray">10,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gray member_list">
+                        <ul>
+                            <li class="flex">
+                                <label class="flex mt0">
+                                    <input type="checkbox">
+                                    <span class="custom-checkbox"></span>
+                                    <p><a href="#">홍길동</a></p>
+                                </label>
+                            </li>
+                            <li>
+                                abc@naver.com
+                            </li>
+                            <li class="pc">
+                                2024.08.11
+                            </li>
+                            <li class="pc">
+                                100
+                            </li>
+                            <li class="pc">
+                                80
+                            </li>
+                            <li class="pc">
+                                10
+                            </li>
+                            <li class="pc">
+                                10,000
+                            </li>
+                        </ul>
+
+                        <div class="member_sub_list">
+                            <div>
+                                <span class="black">최종접속</span>
+                                <span class="gray">2024.08.11</span>
+                            </div>
+                            <div>
+                                <span class="black">체험단 선정 횟수</span>
+                                <span class="gray">100</span>
+                            </div>
+                            <div>
+                                <span class="black">리뷰 완료 횟수</span>
+                                <span class="gray">80</span>
+                            </div>
+                            <div>
+                                <span class="black">패널티 횟수</span>
+                                <span class="gray">10</span>
+                            </div>
+                            <div>
+                                <span class="black">보유포인트</span>
+                                <span class="gray">10,000</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="page message_page">
@@ -448,8 +423,5 @@
   <script src="../script/common.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-     $(function () {
-      $("#sidebar").load("admin_sidebar.html");
-    });
   </script>
 </html>

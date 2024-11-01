@@ -1,137 +1,191 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
 
     <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/common.css"/>
-    <link rel="stylesheet" href="../css/mobile.css"/>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-  />
-    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
     <script src="../script/jquery-3.6.0.js"></script>
-
-</head>
-<body>
+  </head>
+  <body>
     <header id="header"></header>
+    <div class="subPageTit">
+      <span>내 정보</span>
+    </div>
+
     <main id="mypage_point">
-        <div class="mypage_top">
-            <div class="wd120">
-                <ul>
-                    <li class="mypage_profile">
-                        <img src="../img/header_profile.png" alt="">
-                        <span class="mypage_name"><span class="strong">후키짱</span>님 반갑습니다.</span></li>
-                    <li>포인트 <span class="blue point">5,000P</span></li>
-                    <li class="member"><img src="../img/mypage_new.jpg" alt=""></li>
-                </ul>
-            </div>
-        </div>
+      <div class="mypage_top">
         <div class="wd120">
-            <div class="mypage_grid">
-                <div class="mypage_grid_left">
-                    <ul>
-                        <div class="mypage_left_tit"><i class="fa-regular fa-bookmark tit_icon"></i>캠페인</div>
-                        <li><a href="../html/mypage_campaign.html"><span class="strong600">나의 캠페인</span><span class="gray">164</span></a></li>
-                        <li><a href="../html/mypage_content.html"><span class="strong600">등록 콘텐츠</span><span class="gray">153</span></a></li>
-                        <li><a href="../html/mypage_message.html"><span class="strong600">받은 메시지</span><span></span></a></li>
-                    </ul>
-                    <ul>
-                        <div class="mypage_left_tit"><i class="fa-regular fa-user tit_icon"></i>계정관리</div>
-                        <li><a href="../html/mypage_info.html"><span class="strong600">내 정보</span></a></li>
-                        <li class="active"><a href="../html/mypage_point.html"><span class="strong600">나의 포인트</span><span class="gray">5,000</span></a></li>
-                    </ul>
-                    <ul>
-                        <div class="mypage_left_tit"><i class="fa-solid fa-headset tit_icon"></i>고객센터</div>
-                        <li><a href="../html/mypage_cs.html"><span class="strong600">1:1 문의</span></a></li>
-                        <li><a href="../html/mypage_notice.html"><span class="strong600">공지사항</span></a></li>
-                    </ul>
-                </div>
-
-                <div class="mypage_grid_right">
-                    <div class="mypage_right_tit">나의 포인트</div>
-
-                    <div class="flex">
-                        <ul>
-                        </ul>
-                        <a href="../html/mypage_point_out.html" class="point_btn">출금신청</a>
-                    </div>
-
-                    <div class="point_grid">
-                        <ul>
-                            <li>
-                                <p>전체 보유 포인트</p>
-                                <span class="blue">5,000p</span>
-                            </li>
-                            <li>
-                                <p>누적 포인트</p>
-                                <span>5,000p</span>
-                            </li>
-                            <li>
-                                <p>적립 예정 포인트</p>
-                                <span>1,000p</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="point_tab">
-                        <ul class="point_menu">
-                            <li class="active">적립내역</li>
-                            <li>출금내역</li>
-                        </ul>
-
-                        <div class="point_cont">
-                            <ul class="save">
-                                <li class="strong600">적립일</li>
-                                <li class="strong600">적립내역</li>
-                                <li class="strong600">포인트</li>
-                            </ul>
-                            <ul class="save">
-                                <li class="gray">2024.07.05</li>
-                                <li>회원가입</li>
-                                <li>1,000</li>
-                            </ul>
-                        </div>
-
-                        <div class="point_cont">
-                            <ul class="out">
-                                <li class="strong600">신청일</li>
-                                <li class="strong600">신청 포인트</li>
-                                <li class="strong600">은행</li>
-                                <li class="strong600">계좌번호</li>
-                                <li class="strong600">예금주</li>
-                                <li class="strong600">상태</li>
-                                <li class="strong600">처리일시</li>
-                            </ul>
-                            <ul class="out">
-                                <li class="gray">2024.07.05</li>
-                                <li>5,000</li>
-                                <li>신한은행</li>
-                                <li>110330222304043</li>
-                                <li>홍길동</li>
-                                <li class="gray">출금완료</li>
-                                <li class="gray">2024.07.05</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
+          <ul>
+            <li class="mypage_profile">
+              <img src="../img/header_profile.png" alt="" />
+              <span class="mypage_name"
+                ><span class="strong">후키짱</span>님 반갑습니다.</span
+              >
+            </li>
+            <li>포인트 <span class="blue point">5,000P</span></li>
+            <li class="member"><img src="../img/mypage_new.jpg" alt="" /></li>
+          </ul>
         </div>
+      </div>
+      <div class="wd120">
+        <div class="mypage_grid">
+          <div class="mypage_grid_left">
+            <ul>
+              <div class="mypage_left_tit">
+                <i class="fa-regular fa-bookmark tit_icon"></i>캠페인
+              </div>
+              <li>
+                <a href="../html/mypage_campaign.html"
+                  ><span class="strong600">나의 캠페인</span
+                  ><span class="gray">164</span></a
+                >
+              </li>
+              <li>
+                <a href="../html/mypage_content.html"
+                  ><span class="strong600">등록 콘텐츠</span
+                  ><span class="gray">153</span></a
+                >
+              </li>
+              <li>
+                <a href="../html/mypage_message.html"
+                  ><span class="strong600">받은 메시지</span><span></span
+                ></a>
+              </li>
+            </ul>
+            <ul>
+              <div class="mypage_left_tit">
+                <i class="fa-regular fa-user tit_icon"></i>계정관리
+              </div>
+              <li>
+                <a href="../html/mypage_info.html"
+                  ><span class="strong600">내 정보</span></a
+                >
+              </li>
+              <li class="active">
+                <a href="../html/mypage_point.html"
+                  ><span class="strong600">나의 포인트</span
+                  ><span class="gray">5,000</span></a
+                >
+              </li>
+            </ul>
+            <ul>
+              <div class="mypage_left_tit">
+                <i class="fa-solid fa-headset tit_icon"></i>고객센터
+              </div>
+              <li>
+                <a href="../html/mypage_cs.html"
+                  ><span class="strong600">1:1 문의</span></a
+                >
+              </li>
+              <li>
+                <a href="../html/mypage_notice.html"
+                  ><span class="strong600">공지사항</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mypage_grid_right">
+            <div class="mypage_right_tit">나의 포인트</div>
+
+            <div class="flex message_flex">
+              <ul></ul>
+              <a href="../html/mypage_point_out.html" class="point_btn"
+                >출금신청</a
+              >
+            </div>
+
+            <div class="point_grid">
+              <ul>
+                <li class="totalPoint">
+                  <p>전체 보유 포인트</p>
+                  <span class="blue">5,000p</span>
+                </li>
+                <li class="accumulatedPoint">
+                  <p>누적 포인트</p>
+                  <span>5,000p</span>
+                </li>
+                <li class="expectedPoint">
+                  <p>적립 예정 포인트</p>
+                  <span>1,000p</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="point_tab">
+              <ul class="point_menu">
+                <li class="active">적립내역</li>
+                <li>출금내역</li>
+              </ul>
+
+              <table class="point_cont">
+                <tr class="save save_bold">
+                  <th>적립일</th>
+                  <th>적립내역</th>
+                  <th>포인트</th>
+                </tr>
+                <tr class="save save_info">
+                  <td>2024.07.05</td>
+                  <td>회원가입</td>
+                  <td>1,000</td>
+                </tr>
+              </table>
+
+              <div class="point_cont">
+                <ul class="out">
+                  <li class="strong600">신청일</li>
+                  <li class="strong600">신청 포인트</li>
+                  <li class="strong600">은행</li>
+                  <li class="strong600">계좌번호</li>
+                  <li class="strong600">예금주</li>
+                  <li class="strong600">상태</li>
+                  <li class="strong600">처리일시</li>
+                </ul>
+                <ul class="out">
+                  <li class="gray">2024.07.05</li>
+                  <li>5,000</li>
+                  <li>신한은행</li>
+                  <li>110330222304043</li>
+                  <li>홍길동</li>
+                  <li class="gray">출금완료</li>
+                  <li class="gray">2024.07.05</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer id="footer"></footer>
-</body>
-<script src="../script/common.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://kit.fontawesome.com/83785dfa72.js" crossorigin="anonymous"></script>
-<script>
-    $(function(){
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script
+    src="https://kit.fontawesome.com/83785dfa72.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
     });
-</script>
+  </script>
 </html>

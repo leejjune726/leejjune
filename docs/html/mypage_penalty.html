@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <script src="../script/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <main id="mypage_cs_reply">
+      <div class="mypage_top">
+        <div class="wd120">
+          <ul>
+            <li class="mypage_profile">
+              <img src="../img/header_profile.png" alt="" />
+              <span class="mypage_name"
+                ><span class="strong">후키짱</span>님 반갑습니다.</span
+              >
+            </li>
+            <li>포인트 <span class="blue point">5,000P</span></li>
+            <li class="member"><img src="../img/mypage_new.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+      <div class="wd120">
+        <div class="mypage_grid">
+          <div class="mypage_grid_left">
+            <ul>
+              <div class="mypage_left_tit">
+                <i class="fa-regular fa-bookmark tit_icon"></i>캠페인
+              </div>
+              <li>
+                <a href="../html/mypage_campaign.html"
+                  ><span class="strong600">나의 캠페인</span
+                  ><span class="gray">164</span></a
+                >
+              </li>
+              <li>
+                <a href="../html/mypage_content.html"
+                  ><span class="strong600">등록 콘텐츠</span
+                  ><span class="gray">153</span></a
+                >
+              </li>
+              <li>
+                <a href="../html/mypage_message.html"
+                  ><span class="strong600">받은 메시지</span><span></span
+                ></a>
+              </li>
+            </ul>
+            <ul>
+              <div class="mypage_left_tit">
+                <i class="fa-regular fa-user tit_icon"></i>계정관리
+              </div>
+              <li>
+                <a href="../html/mypage_info.html"
+                  ><span class="strong600">내 정보</span></a
+                >
+              </li>
+              <li>
+                <a href="../html/mypage_point.html"
+                  ><span class="strong600">나의 포인트</span
+                  ><span class="gray">5,000</span></a
+                >
+              </li>
+            </ul>
+            <ul>
+              <div class="mypage_left_tit">
+                <i class="fa-solid fa-headset tit_icon"></i>고객센터
+              </div>
+              <li class="active">
+                <a href="../html/mypage_cs.html"
+                  ><span class="strong600">1:1 문의</span></a
+                >
+              </li>
+              <li>
+                <a href="../html/mypage_notice.html"
+                  ><span class="strong600">공지사항</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="mypage_grid_right">
+            <div class="mypage_right_tit">패널티 확인</div>
+            <div class="cs_write mypage_right_sub">
+              페널티는 캠페인 일방적 취소, 콘텐츠 미등록, 유지기간 미준수 등
+              캠페인 진행 의무사항을 이행하지 않은 회원님들께 부여하는 제재
+              시스템으로 부여받은 페널티 갯수에 따라 서비스 이용에 제한이
+              가해집니다. 받은 패널티는 6개월 이후 차감되며 영구정지 회원은
+              서비스 이용이 불가능합니다.
+            </div>
+
+            <!-- 계정관리_패널티확인 (없는 경우) -->
+            <div class="penalty_tit">
+              <p class="penalty_txt">패널티 현황</p>
+              <div class="progress-bar-container">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <div class="progress-labels">
+                  <span></span>
+                  <span>1회</span>
+                  <span>2회</span>
+                  <span>3회</span>
+                  <span>4회</span>
+                  <span>5회</span>
+                </div>
+              </div>
+              <p class="penalty_ex">
+                패널티 1회 : 경고 > 패널티 2회 : 서비스 제한 15일 > 패널티 3회 :
+                서비스 제한 30일 > 패널티 5회 : 영구 정지
+              </p>
+            </div>
+
+            <div class="penalty_tit">
+              <p class="penalty_txt">패널티 사유</p>
+              <table>
+                <tr class="penalty_reason">
+                  <td></td>
+                  <td class="tx_center">패널티 내역이 없습니다.</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- 계정관리_패널티확인_패널티 있는 경우  -->
+            <!-- <div class="penalty_tit">
+              <p class="penalty_txt">패널티 현황</p>
+              <div class="progress-bar-container">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <div class="progress-labels">
+                  <span></span>
+                  <span>1회</span>
+                  <span>2회</span>
+                  <span>3회</span>
+                  <span>4회</span>
+                  <span>5회</span>
+                </div>
+              </div>
+              <p class="penalty_ex">
+                패널티 1회 : 경고 > 패널티 2회 : 서비스 제한 15일 > 패널티 3회 :
+                서비스 제한 30일 > 패널티 5회 : 영구 정지
+              </p>
+            </div>
+
+            <div class="penalty_tit">
+              <p class="penalty_txt">패널티 사유</p>
+              <table>
+                <tr class="penalty_reason">
+                  <td>1회</td>
+                  <td>[대전] 대포조개전골 도안점 - 콘텐츠 등록 지연</td>
+                  <td>2024.09.10</td>
+                </tr>
+                <tr class="penalty_reason">
+                  <td>1회</td>
+                  <td>[대전] 대포조개전골 도안점 - 콘텐츠 등록 지연</td>
+                  <td>2024.09.10</td>
+                </tr>
+                <tr class="penalty_reason">
+                  <td>1회</td>
+                  <td>[대전] 대포조개전골 도안점 - 콘텐츠 등록 지연</td>
+                  <td>2024.09.10</td>
+                </tr>
+              </table>
+            </div> -->
+
+            <div class="cs_write_btn">
+              <button class="cs_write_y">패널티 시스템 안내</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script
+    src="https://kit.fontawesome.com/83785dfa72.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+      $("#footer").load("footer.html");
+    });
+
+    function setProgress(steps) {
+      const progress = document.querySelector(".progress");
+      const percentage = (steps / 5) * 100;
+      progress.style.width = percentage + "%";
+    }
+
+    // 횟수 입력
+    setProgress(0.2);
+    // setProgress(3);
+  </script>
+</html>

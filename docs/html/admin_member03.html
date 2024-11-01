@@ -22,7 +22,69 @@
 		
     <main id="admin_member03">
         <section class="section_grid">
-            <div id="sidebar"></div>
+            <div class="section_left pc">
+                <div class="left_top">
+                    <div class="admin_logo">
+                        <img src="../img/logo.png" alt="">
+                    </div>
+    
+                    <div class="admin_profile">
+                        <img src="../img/admin_profile.png" alt="">
+                        <p><span class="strong600">관리자</span>님 반갑습니다.</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="../html/main.html">
+                            <span class="icon_before icon_home">Home</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="gray40 admin">Member</p>
+                <ul class="active">
+                    <li>
+                        <span class="icon_before icon_user">회원 관리</span>
+                    </li>
+                    <ul class="sub_list">
+                        <li class="active"><a href=""><span>회원 목록</span></a></li>
+                        <li><a href=""><span>패널티 회원 관리</span></a></li>
+                    </ul>
+                </ul>
+                <p class="gray40 admin mt20">Campaign</p>
+                <ul>
+                    <li>
+                        <span class="icon_before icon_campaign">캠페인 관리</span>
+                    </li>
+                    <ul class="sub_list">
+                        <li><a href=""><span>캠페인 등록</span></a></li>
+                        <li><a href=""><span>진행중인 캠페인</span></a></li>
+                        <li><a href=""><span>리뷰 등록중 캠페인</span></a></li>
+                        <li><a href=""><span>리뷰 관리</span></a></li>
+                    </ul>
+                </ul>
+                <p class="gray40 admin mt20">Board</p>
+                <ul>
+                    <li>
+                        <span class="icon_before icon_board">게시판 관리</span>
+                    </li>
+                    <ul class="sub_list">
+                        <li><a href=""><span>공지사항</span></a></li>
+                        <li><a href=""><span>1:1 문의</span></a></li>
+                        <li><a href=""><span>광고 문의</span></a></li>
+                    </ul>
+                </ul>
+                <p class="gray40 admin mt20">Setting</p>
+                <ul>
+                    <li>
+                        <span class="icon_before icon_setting">환경 설정</span>
+                    </li>
+                    <ul class="sub_list">
+                        <li><a href=""><span>배너 관리</span></a></li>
+                        <li><a href=""><span>1:1 문의</span></a></li>
+                        <li><a href=""><span>위젯 관리</span></a></li>
+                    </ul>
+                </ul>
+            </div>
 
             <div class="section_right">
                 <div class="mypage_grid_right"></div>
@@ -343,8 +405,5 @@
   <script src="../script/common.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    $(function () {
-     $("#sidebar").load("admin_sidebar.html");
-   });
- </script>
+  </script>
 </html>
