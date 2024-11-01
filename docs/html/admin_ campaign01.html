@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HUKI admin</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+		
+    <main id="admin_member04">
+        <section class="section_grid">
+            <div id="sidebar"></div>
+
+            <div class="section_right">                
+                <h2 class="ti1">캠페인 등록</h2>
+                <!-- 탭메뉴 -->
+                <ul class="tab-menu">
+                    <li class="tab active" data-tab="tab01">비방문</li>
+                    <li class="tab" data-tab="tab02">방문</li>
+                </ul>
+
+                <!-- 비방문 탭 -->
+                <div id="tab01" class="tab_content active" data-tab="tab01">
+                    <div class="tab_inner">
+                        <table class="table input_table">
+                            <caption class="sr_only">제목, 썸네일, 상세페이지, 모집기간, 인원설정, 체험단 발표 날짜, 리뷰 등록 기간, 캠페인 마감 날짜, 제공내역, 검색 키워드, 캠페인 미션, 캠페인 안내사항</caption>
+                            <colgroup>
+                                <col width="20%">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="col">제목</th>
+                                    <td><input type="text" class="form_control" id="" value="" aria-label="제목 입력" placeholder="기대평을 남겨주세요"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">썸네일</th>
+                                    <td>
+                                        <div class="filebox">
+                                            <label for="file">등록하기</label> 
+                                            <input type="file" id="file">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">상세페이지</th>
+                                    <td>
+                                        <div class="filebox">
+                                            <label for="file">등록하기</label> 
+                                            <input type="file" id="file">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">모집기간</th>
+                                    <td>
+                                        <select name="" id="" class="form_control" style="max-width: 160px;">
+                                            <option value="">1일</option>
+                                            <option value="">2일</option>
+                                            <option value="">3일</option>
+                                            <option value="">4일</option>
+                                            <option value="">5일</option>
+                                            <option value="">6일</option>
+                                            <option value="">7일</option>
+                                            <option value="">8일</option>
+                                            <option value="">9일</option>
+                                            <option value="">10일</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">인원설정</th>
+                                    <td><input type="text" class="form_control col-2" id="" value="" aria-label="인원 입력" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">체험단 발표 날짜</th>
+                                    <td>
+                                        <div class="d-flex">
+                                            <select name="" id="" class="form_control mr10"  style="max-width: 160px;">
+                                                <option value="">2024년</option>
+                                                <option value="">2023년</option>
+                                                <option value="">2022년</option>
+                                                <option value="">2021년</option>
+                                                <option value="">2020년</option>
+                                                <option value="">2019년</option>
+                                                <option value="">2018년</option>
+                                                <option value="">2017년</option>
+                                            </select>
+                                            <select name="" id="" class="form_control mr10" style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                            <select name="" id="" class="form_control " style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">리뷰 등록 기간</th>
+                                    <td>
+                                        <div class="d-flex">
+                                            <select name="" id="" class="form_control mr10" style="max-width: 160px;">
+                                                <option value="">2024년</option>
+                                                <option value="">2023년</option>
+                                                <option value="">2022년</option>
+                                                <option value="">2021년</option>
+                                                <option value="">2020년</option>
+                                                <option value="">2019년</option>
+                                                <option value="">2018년</option>
+                                                <option value="">2017년</option>
+                                            </select>
+                                            <select name="" id="" class="form_control mr10" style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                            <select name="" id="" class="form_control" style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>                                
+                                <tr>
+                                    <th scope="col">캠페인 마감 날짜</th>
+                                    <td>
+                                        <div class="d-flex">
+                                            <select name="" id="" class="form_control mr10" style="max-width: 160px;">
+                                                <option value="">2024년</option>
+                                                <option value="">2023년</option>
+                                                <option value="">2022년</option>
+                                                <option value="">2021년</option>
+                                                <option value="">2020년</option>
+                                                <option value="">2019년</option>
+                                                <option value="">2018년</option>
+                                                <option value="">2017년</option>
+                                            </select>
+                                            <select name="" id="" class="form_control mr10" style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                            <select name="" id="" class="form_control" style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">제공 내역</th>
+                                    <td>
+                                        <div class="d-flex mb10">
+                                            <select name="" id="" class="form_control form_select mr10" style="max-width: 160px;">
+                                                <option value="">Pretendard</option>
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                            </select>
+                                            <select name="" id="" class="form_control form_select mr10 col-1">
+                                                <option value="">10</option>
+                                                <option value="">12</option>
+                                                <option value="">14</option>
+                                                <option value="">16</option>
+                                                <option value="">18</option>
+                                                <option value="">20</option>
+                                            </select>
+                                            <button type="button" class="btn02 btn-bold mr10"><span class="sr_only">폰트 굵기</span></button>
+                                            <button type="button" class="btn02 "><span class="sr_only">폰트 넓이</span></button>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" class="form_control"  placeholder="">[2-4인 제한] 아래의 항목 中 선택 1 ( 30,000원 이용권 )</textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">검색 키워드</th>
+                                    <td>
+                                        <div class="d-flex mb10">
+                                            <select name="" id="" class="form_control form_select mr10" style="max-width: 160px;">
+                                                <option value="">Pretendard</option>
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                            </select>
+                                            <select name="" id="" class="form_control form_select mr10 col-1">
+                                                <option value="">10</option>
+                                                <option value="">12</option>
+                                                <option value="">14</option>
+                                                <option value="">16</option>
+                                                <option value="">18</option>
+                                                <option value="">20</option>
+                                            </select>
+                                            <button type="button" class="btn02 btn-bold mr10"><span class="sr_only">폰트 굵기</span></button>
+                                            <button type="button" class="btn02 "><span class="sr_only">폰트 넓이</span></button>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" class="form_control"  placeholder=""></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">캠페인 미션</th>
+                                    <td>
+                                        <div class="d-flex mb10">
+                                            <select name="" id="" class="form_control form_select mr10" style="max-width: 160px;">
+                                                <option value="">Pretendard</option>
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                            </select>
+                                            <select name="" id="" class="form_control form_select mr10 col-1">
+                                                <option value="">10</option>
+                                                <option value="">12</option>
+                                                <option value="">14</option>
+                                                <option value="">16</option>
+                                                <option value="">18</option>
+                                                <option value="">20</option>
+                                            </select>
+                                            <button type="button" class="btn02 btn-bold mr10"><span class="sr_only">폰트 굵기</span></button>
+                                            <button type="button" class="btn02 "><span class="sr_only">폰트 넓이</span></button>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" class="form_control"  placeholder=""></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">캠페인 안내사항</th>
+                                    <td>
+                                        <div class="d-flex mb10">
+                                            <select name="" id="" class="form_control form_select mr10" style="max-width: 160px;">
+                                                <option value="">Pretendard</option>
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                            </select>
+                                            <select name="" id="" class="form_control form_select mr10 col-1">
+                                                <option value="">10</option>
+                                                <option value="">12</option>
+                                                <option value="">14</option>
+                                                <option value="">16</option>
+                                                <option value="">18</option>
+                                                <option value="">20</option>
+                                            </select>
+                                            <button type="button" class="btn02 btn-bold mr10"><span class="sr_only">폰트 굵기</span></button>
+                                            <button type="button" class="btn02 "><span class="sr_only">폰트 넓이</span></button>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" class="form_control"  placeholder=""></textarea>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <div class="btn-wrap mt60">
+                            <button type="button" class="btn01"><span>등록</span></button>
+                            <button type="button" class="btn01 btn-gray"><span>취소</span></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 방문 탭 -->
+                <div id="tab02" class="tab_content" data-tab="tab02">
+                    <div class="tab_inner">
+                        <table class="table input_table">
+                            <caption class="sr_only">제목, 썸네일, 상세페이지, 모집기간, 인원설정, 체험단 발표 날짜, 리뷰 등록 기간, 캠페인 마감 날짜, 제공내역, 검색 키워드, 캠페인 미션, 방문 및 예약안내, 캠페인 안내사항</caption>
+                            <colgroup>
+                                <col width="20%">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="col">제목</th>
+                                    <td><input type="text" class="form_control" id="" value="" aria-label="제목 입력" placeholder="기대평을 남겨주세요"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">썸네일</th>
+                                    <td>
+                                        <div class="filebox">
+                                            <label for="file">등록하기</label> 
+                                            <input type="file" id="file">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">상세페이지</th>
+                                    <td>
+                                        <div class="filebox">
+                                            <label for="file">등록하기</label> 
+                                            <input type="file" id="file">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">모집기간</th>
+                                    <td>
+                                        <select name="" id="" class="form_control" style="max-width: 160px;">
+                                            <option value="">1일</option>
+                                            <option value="">2일</option>
+                                            <option value="">3일</option>
+                                            <option value="">4일</option>
+                                            <option value="">5일</option>
+                                            <option value="">6일</option>
+                                            <option value="">7일</option>
+                                            <option value="">8일</option>
+                                            <option value="">9일</option>
+                                            <option value="">10일</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">인원설정</th>
+                                    <td><input type="text" class="form_control col-2" id="" value="" aria-label="인원 입력" placeholder=""></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">체험단 발표 날짜</th>
+                                    <td>
+                                        <div class="d-flex">
+                                            <select name="" id="" class="form_control mr10"  style="max-width: 160px;">
+                                                <option value="">2024년</option>
+                                                <option value="">2023년</option>
+                                                <option value="">2022년</option>
+                                                <option value="">2021년</option>
+                                                <option value="">2020년</option>
+                                                <option value="">2019년</option>
+                                                <option value="">2018년</option>
+                                                <option value="">2017년</option>
+                                            </select>
+                                            <select name="" id="" class="form_control mr10" style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                            <select name="" id="" class="form_control " style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">리뷰 등록 기간</th>
+                                    <td>
+                                        <div class="d-flex">
+                                            <select name="" id="" class="form_control mr10" style="max-width: 160px;">
+                                                <option value="">2024년</option>
+                                                <option value="">2023년</option>
+                                                <option value="">2022년</option>
+                                                <option value="">2021년</option>
+                                                <option value="">2020년</option>
+                                                <option value="">2019년</option>
+                                                <option value="">2018년</option>
+                                                <option value="">2017년</option>
+                                            </select>
+                                            <select name="" id="" class="form_control mr10" style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                            <select name="" id="" class="form_control" style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>                                
+                                <tr>
+                                    <th scope="col">캠페인 마감 날짜</th>
+                                    <td>
+                                        <div class="d-flex">
+                                            <select name="" id="" class="form_control mr10" style="max-width: 160px;">
+                                                <option value="">2024년</option>
+                                                <option value="">2023년</option>
+                                                <option value="">2022년</option>
+                                                <option value="">2021년</option>
+                                                <option value="">2020년</option>
+                                                <option value="">2019년</option>
+                                                <option value="">2018년</option>
+                                                <option value="">2017년</option>
+                                            </select>
+                                            <select name="" id="" class="form_control mr10" style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                            <select name="" id="" class="form_control" style="max-width: 160px;">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">제공 내역</th>
+                                    <td>
+                                        <div class="d-flex mb10">
+                                            <select name="" id="" class="form_control form_select mr10" style="max-width: 160px;">
+                                                <option value="">Pretendard</option>
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                            </select>
+                                            <select name="" id="" class="form_control form_select mr10 col-1">
+                                                <option value="">10</option>
+                                                <option value="">12</option>
+                                                <option value="">14</option>
+                                                <option value="">16</option>
+                                                <option value="">18</option>
+                                                <option value="">20</option>
+                                            </select>
+                                            <button type="button" class="btn02 btn-bold mr10"><span class="sr_only">폰트 굵기</span></button>
+                                            <button type="button" class="btn02 "><span class="sr_only">폰트 넓이</span></button>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" class="form_control"  placeholder="">[2-4인 제한] 아래의 항목 中 선택 1 ( 30,000원 이용권 )</textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">검색 키워드</th>
+                                    <td>
+                                        <div class="d-flex mb10">
+                                            <select name="" id="" class="form_control form_select mr10" style="max-width: 160px;">
+                                                <option value="">Pretendard</option>
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                            </select>
+                                            <select name="" id="" class="form_control form_select mr10 col-1">
+                                                <option value="">10</option>
+                                                <option value="">12</option>
+                                                <option value="">14</option>
+                                                <option value="">16</option>
+                                                <option value="">18</option>
+                                                <option value="">20</option>
+                                            </select>
+                                            <button type="button" class="btn02 btn-bold mr10"><span class="sr_only">폰트 굵기</span></button>
+                                            <button type="button" class="btn02 "><span class="sr_only">폰트 넓이</span></button>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" class="form_control"  placeholder=""></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">캠페인 미션</th>
+                                    <td>
+                                        <div class="d-flex mb10">
+                                            <select name="" id="" class="form_control form_select mr10" style="max-width: 160px;">
+                                                <option value="">Pretendard</option>
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                            </select>
+                                            <select name="" id="" class="form_control form_select mr10 col-1">
+                                                <option value="">10</option>
+                                                <option value="">12</option>
+                                                <option value="">14</option>
+                                                <option value="">16</option>
+                                                <option value="">18</option>
+                                                <option value="">20</option>
+                                            </select>
+                                            <button type="button" class="btn02 btn-bold mr10"><span class="sr_only">폰트 굵기</span></button>
+                                            <button type="button" class="btn02 "><span class="sr_only">폰트 넓이</span></button>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" class="form_control"  placeholder=""></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">방문 및 예약안내</th>
+                                    <td>
+                                        <div class="d-flex mb10">
+                                            <select name="" id="" class="form_control form_select mr10" style="max-width: 160px;">
+                                                <option value="">Pretendard</option>
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                            </select>
+                                            <select name="" id="" class="form_control form_select mr10 col-1">
+                                                <option value="">10</option>
+                                                <option value="">12</option>
+                                                <option value="">14</option>
+                                                <option value="">16</option>
+                                                <option value="">18</option>
+                                                <option value="">20</option>
+                                            </select>
+                                            <button type="button" class="btn02 btn-bold mr10"><span class="sr_only">폰트 굵기</span></button>
+                                            <button type="button" class="btn02 mr10"><span class="sr_only">폰트 넓이</span></button>
+                                            <button type="button" class="btn02 btn-location"><span class="sr_only">지도</span></button>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" class="form_control"  placeholder=""></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">캠페인 안내사항</th>
+                                    <td>
+                                        <div class="d-flex mb10">
+                                            <select name="" id="" class="form_control form_select mr10" style="max-width: 160px;">
+                                                <option value="">Pretendard</option>
+                                                <option value="">옵션1</option>
+                                                <option value="">옵션2</option>
+                                            </select>
+                                            <select name="" id="" class="form_control form_select mr10 col-1">
+                                                <option value="">10</option>
+                                                <option value="">12</option>
+                                                <option value="">14</option>
+                                                <option value="">16</option>
+                                                <option value="">18</option>
+                                                <option value="">20</option>
+                                            </select>
+                                            <button type="button" class="btn02 btn-bold mr10"><span class="sr_only">폰트 굵기</span></button>
+                                            <button type="button" class="btn02 "><span class="sr_only">폰트 넓이</span></button>
+                                        </div>
+                                        <textarea name="" id="" cols="30" rows="10" class="form_control"  placeholder=""></textarea>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                        <div class="btn-wrap mt60">
+                            <button type="button" class="btn01"><span>등록</span></button>
+                            <button type="button" class="btn01 btn-gray"><span>취소</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+     $(function () {
+      $("#sidebar").load("admin_sidebar.html");
+    });
+  </script>
+</html>

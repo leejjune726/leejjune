@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title></title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <main id="mypage_unregister">
+         <div class="wd120">
+            <div class="un_tit">회원탈퇴</div>
+            <div class="un_sub strong600">
+                <p>정말로 탈퇴하시겠습니까?</p>
+                <p>탈퇴하실 경우 모든 포인트가 소멸됩니다.</p>
+            </div>
+            <div class="un_desc">
+                회원탈퇴 후 동일한 실명으로 1년간 재가입이 불가능합니다. <br>
+                탈퇴 이후에는 반복적인 재가입 악용을 방지하기 위해 회원정보 및 페널티 내역이 1년간 보관됩니다. <br>
+                탈퇴 이후에는 보유하신 모든 포인트가 소멸됩니다.
+            </div>
+
+            <div class="un_checkbox">
+                <label class="label flex">
+                    <input type="checkbox">
+                    <span class="custom-checkbox"></span>
+                    <span class="text">안내 사항을 모두 확인했으며, 이에 동의합니다.</span>
+                </label>
+            </div>
+
+            <div class="area_tit strong500">후키가 개선했으면 하는 점을 알려주세요.</div>
+            <textarea name="" id="" class="textarea"></textarea>
+
+            <div class="un_btn">
+                <button class="btn_unregister">회원탈퇴</button>
+                <button class="btn_cancel">취소하기</button>
+            </div>
+         </div>
+    </main>
+
+    <footer id="footer"></footer>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+  </script>
+</html>

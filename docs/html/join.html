@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title></title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+    <header id="header"></header>
+		
+    <main id="join">
+		<p class="join_tit">회원가입</p>
+		<p class="join_sub">후키를 통해 다양한 체험과 혜택을 경험하세요!</p>
+
+		<div class="join_grid">
+			<form class="email form40" action="">
+				<input type="text" class="common_input input60 margin" placeholder="이메일">
+				<select name="" id="" class="common_select input40">
+					<option value="" disabled selected hidden>직접입력</option>
+					<option value="@naver.com">@naver.com</option>
+					<option value="@daum.net">@daum.net</option>
+				</select>
+			</form>
+			<form action="">
+				<input type="text" class="common_input margin" placeholder="이름">
+			</form>
+			<form action="">
+				<input type="text" class="common_input margin" placeholder="닉네임">
+			</form>
+			<div class="join_phone">
+				<form class="phone">
+					<input type="text" class="common_input input60 margin" placeholder="휴대폰">
+				</form>
+				<span class="mypage_info_btn input40">휴대폰 본인인증</span>
+			</div>
+
+			<form action="">
+				<div class="flex post">
+					<input type="text" class="common_input margin post input60" placeholder="우편번호">
+					<input type="button" onclick="sample6_execDaumPostcode()" class="post_btn input40" value="우편번호 찾기">
+				</div>
+				<input type="text" class="common_input margin" placeholder="주소">
+				<input type="text" class="common_input margin" placeholder="상세주소">
+			</form>
+
+			<form action="">
+				<input type="text" class="common_input margin" placeholder="비밀번호">
+				<input type="text" class="common_input margin" placeholder="비밀번호 확인">
+			</form>
+		</div>
+
+		<div class="join_txt">
+			<div>
+				<label>
+					<input type="checkbox">
+					<span class="custom-checkbox"></span>
+					<span class="text">본인은 만 14세 이상입니다.</span>
+				</label>
+			</div>
+			<div>
+				<label>
+					<input type="checkbox">
+					<span class="custom-checkbox"></span>
+					<span class="text"><span class="red">(필수)</span> 서비스 이용 약관에 동의합니다. <a href="../html/join_use.html" class="cont_view" data-target="0">내용보기</a></span>
+				</label>
+			</div>
+			<div>
+				<label>
+					<input type="checkbox">
+					<span class="custom-checkbox"></span>
+					<span class="text"><span class="red">(필수)</span> 개인정보 수집·이용에 동의합니다. <a href="../html/join_personal.html" class="cont_view" data-target="1">내용보기</a></span>
+				</label>
+			</div>
+			<div>
+				<label>
+					<input type="checkbox">
+					<span class="custom-checkbox"></span>
+					<span class="text">(선택) 이벤트 및 혜택안내 개인정보 수집·이용에 동의합니다.   <a href="../html/join_event.html" class="cont_view" data-target="2">내용보기</a></span>
+
+					<div class="label_sub">
+						<label>
+							<input type="checkbox">
+							<span class="custom-checkbox"></span>
+							<span class="text">(선택) 이메일 수신 동의</span>
+						</label>
+						<label>
+							<input type="checkbox">
+							<span class="custom-checkbox"></span>
+							<span class="text">(선택) SMS 수신 동의</span>
+						</label>
+					</div>
+				</label>
+				
+				<div class="all_agree">
+					<label>
+						<input type="checkbox">
+						<span class="custom-checkbox"></span>
+						<span>전체동의</span>
+					</label>
+				</div>
+			</div>
+		</div>
+
+		<button class="join_btn">회원 가입</button>
+    </main>
+
+    <footer id="footer"></footer>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    $(function(){
+        $("#header").load("header_join.html");
+        $("#footer").load("footer.html");
+    });
+  </script>
+</html>

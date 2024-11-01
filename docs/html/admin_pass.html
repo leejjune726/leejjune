@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title></title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+    <header id="header"></header>
+		
+    <main id="admin_pass">
+        <div class="wd45">
+            <div class="login_tit login_pass_tit">비밀번호 찾기</div>
+
+            <div class="login_pass_desc">
+                사용자명과 이메일 주소를 입력해주세요. 비밀번호를 재설정하는 방법에 대한 지침이 있는 이메일 안내문을 받게 될 것입니다.
+            </div>
+            <form action="">
+                <input type="text" class="common_input login_pass_input" placeholder="사용자명 또는 이메일 주소">
+
+                <button class="join_btn login_pass_btn">새 비밀번호 받기</button>
+                <button class="join_btn login_pass_btn">로그인</button>
+            </form>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    $(function(){
+        $("#header").load("header_join.html");
+        $("#footer").load("footer.html");
+    });
+  </script>
+</html>

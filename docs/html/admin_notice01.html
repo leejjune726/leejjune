@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HUKI admin</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+		
+    <main id="admin_notice01">
+        <section class="section_grid">
+            <div id="sidebar"></div>
+
+            <div class="section_right">                
+                <div class="d-flex justify-content-between align-item-end">
+                    <h2 class="ti1" style="width: 100%;">공지사항</h2>
+                    <div class="d-flex justify-content-end" style="width: 100%;">    
+                        <button type="button" class="btn01 mr10"><span>글쓰기</span></button>                    
+                        <button type="button" class="btn01 btn01-outline mr10"><span>수정</span></button>                    
+                        <button type="button" class="btn01 btn01-outline "><span>삭제</span></button>   
+                    </div>
+                </div>
+                
+                <div class="table-wrap mt20 pc_only">
+                    <table class="table text-center">
+                        <caption class="sr_only">공지사항 항목 : 번호, 제목, 등록일</caption>
+                        <colgroup>
+                            <col width="3%">
+                            <col width="5%">
+                            <col>
+                            <col width="10%">                           
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="row">
+                                    <div class="input_check">
+                                        <input type="checkbox" class="" value="" id="check_01_1" name="check_01">
+                                        <label for="check_01_1"></label>
+                                    </div>
+                                </th>
+                                <th scope="row">번호</th>
+                                <th scope="row">제목</th>
+                                <th scope="row">등록일</th>                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="input_check">
+                                        <input type="checkbox" class="" value="" id="check_01_2" name="check_01">
+                                        <label for="check_01_2"></label>
+                                    </div>
+                                </td>
+                                <td>6</td>
+                                <td>홈페이지를 오픈했습니다.</td>
+                                <td>2024.08.11</td>                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input_check">
+                                        <input type="checkbox" class="" value="" id="check_01_2" name="check_01">
+                                        <label for="check_01_2"></label>
+                                    </div>
+                                </td>
+                                <td>5</td>
+                                <td>홈페이지를 오픈했습니다.</td>
+                                <td>2024.08.11</td>                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input_check">
+                                        <input type="checkbox" class="" value="" id="check_01_2" name="check_01">
+                                        <label for="check_01_2"></label>
+                                    </div>
+                                </td>
+                                <td>4</td>
+                                <td>홈페이지를 오픈했습니다.</td>
+                                <td>2024.08.11</td>                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input_check">
+                                        <input type="checkbox" class="" value="" id="check_01_2" name="check_01">
+                                        <label for="check_01_2"></label>
+                                    </div>
+                                </td>
+                                <td>3</td>
+                                <td>홈페이지를 오픈했습니다.</td>
+                                <td>2024.08.11</td>                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input_check">
+                                        <input type="checkbox" class="" value="" id="check_01_2" name="check_01">
+                                        <label for="check_01_2"></label>
+                                    </div>
+                                </td>
+                                <td>2</td>
+                                <td>홈페이지를 오픈했습니다.</td>
+                                <td>2024.08.11</td>                                
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input_check">
+                                        <input type="checkbox" class="" value="" id="check_01_2" name="check_01">
+                                        <label for="check_01_2"></label>
+                                    </div>
+                                </td>
+                                <td>1</td>
+                                <td>홈페이지를 오픈했습니다.</td>
+                                <td>2024.08.11</td>                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="page message_page">
+                    <ul class="page_pagination">
+                        <li><a href="#" class="arrow first"><img src="../img/page-first.png" class="arrow_first" alt=""></a></li>
+                        <li><a href="#" class="arrow left"><img src="../img/page-left.png" alt=""></a></li>
+                        <li class="active"><a href="#" class="page_num">1</a></li>
+                        <li><a href="#" class="page_num">2</a></li>
+                        <li><a href="#" class="page_num">3</a></li>
+                        <li><a href="#" class="page_num">4</a></li>
+                        <li><a href="#" class="page_num">5</a></li>
+                        <li><a href="#" class="arrow right"><img src="../img/page-right.png" alt=""></a></li>
+                        <li><a href="#" class="arrow last"><img src="../img/page-last.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+     $(function () {
+      $("#sidebar").load("admin_sidebar.html");
+    });
+  </script>
+</html>

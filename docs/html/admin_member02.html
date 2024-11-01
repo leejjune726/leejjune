@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HUKI admin</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+		
+    <main id="admin_member02">
+        <section class="section_grid mb_block">
+            <div id="sidebar" class="pc_only"></div>
+
+            <div class="mb_only mb30">
+                <div class="mb_header">
+                    <ul class="d-flex align-item-center justify-content-between">
+                        <li><a href=""><img src="../img/img-menu.svg" alt="메뉴"></a></li>
+                        <li><a href=""><img src="../img/img-home.svg" alt="홈"></a></li>
+                        <li><a href=""><img src="../img/img-search.svg" alt="검색"></a></li>
+                    </ul>
+                </div>
+                <div class="mb_title text-center">
+                    <h2 class="txt03">회원 목록</h2>
+                </div>
+            </div>
+
+            <div class="section_right">
+                <div class="flex">
+                    <div class="mypage_right_tit">회원 정보</div>
+                    <button type="button" class="modify_btn">패널티 부여</button>
+                </div>
+
+                <div class="member02_grid mt20">
+                    <div>
+                        <img src="../img/ademin_member02.png" alt="">
+                    </div>
+                    <div>
+                       <div class="member02_sub_grid mb-flex-column">
+                            <ul class="member02_grid_left">
+                                <li class="black100">이름</li>
+                                <li>홍길동</li>
+                            </ul>
+                            <ul class="member02_grid_right">
+                                <li class="black100">주소</li>
+                                <li>창원시 남산동 5, 1001-1203</li>
+                            </ul>
+                       </div>
+                        <div class="member02_sub_grid mb-flex-column">
+                            <ul class="member02_grid_left">
+                                <li class="black100">연락처</li>
+                                <li>010-1234-5678</li>
+                            </ul>
+                            <ul class="member02_grid_right">
+                                <li class="black100">회원가입일</li>
+                                <li>2024. 10. 03</li>
+                            </ul>
+                        </div>
+                        <div class="member02_sub_grid mb-flex-column">
+                            <ul class="member02_grid_left">
+                                <li class="black100">성별</li>
+                                <li>여자</li>
+                            </ul>
+                            <ul class="member02_grid_right">
+                                <li class="black100">보유 SNS 채널</li>
+                                <li><span class="blog">블로그</span></li>
+                            </ul>
+                        </div>
+                        <div class="member02_sub_grid mb-flex-column">
+                            <ul class="member02_grid_left">
+                                <li class="black100">출생년도</li>
+                                <li>1995. 12. 25</li>
+                            </ul>
+                            <ul class="member02_grid_right">
+                                <li class="black100">체험단 신청 현황</li>
+                                <li><span class="cont_view">20</span>건</li>
+                            </ul>
+                        </div>
+                        <div class="member02_sub_grid mb-flex-column">
+                            <ul class="member02_grid_left">
+                                <li class="black100">이메일</li>
+                                <li>abc@naver.com</li>
+                            </ul>
+                            <ul class="member02_grid_right">
+                                <li class="black100">리뷰 완료 내역</li>
+                                <li><span class="cont_view">20</span>건</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="point_tab">
+                    <ul class="point_menu">
+                        <li class="active">적립내역</li>
+                        <li>출금내역</li>
+                    </ul>
+
+                    <div class="point_cont">
+                        <ul class="save">
+                            <li class="strong600">적립일</li>
+                            <li class="strong600">적립내역</li>
+                            <li class="strong600">포인트</li>
+                        </ul>
+                        <ul class="save">
+                            <li class="gray">2024.07.05</li>
+                            <li>회원가입</li>
+                            <li>1,000</li>
+                        </ul>
+                    </div>
+
+                    <div class="point_cont">
+                        <ul class="out">
+                            <li class="strong600">신청일</li>
+                            <li class="strong600">신청 포인트</li>
+                            <li class="strong600">은행</li>
+                            <li class="strong600">계좌번호</li>
+                            <li class="strong600">예금주</li>
+                            <li class="strong600">상태</li>
+                            <li class="strong600">처리일시</li>
+                        </ul>
+                        <ul class="out">
+                            <li class="gray">2024.07.05</li>
+                            <li>5,000</li>
+                            <li>신한은행</li>
+                            <li>110330222304043</li> 
+                            <li>홍길동</li>
+                            <li class="gray">출금완료</li>
+                            <li class="gray">2024.07.05</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    $(function () {
+     $("#sidebar").load("admin_sidebar.html");
+   });
+ </script>
+</html>

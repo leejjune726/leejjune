@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HUKI admin</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+		
+    <main id="admin_notice01">
+        <section class="section_grid">
+            <div id="sidebar"></div>
+
+            <div class="section_right">            
+                <h2 class="ti1" style="width: 100%;">공지사항</h2>   
+                
+                <table class="table write_table">
+                    <caption class="sr_only">공지사항 항목 : 제목, 첨부파일, 내용</caption>                    
+                    <tbody>
+                        <tr>                           
+                            <td><input type="text" class="form_control" id="" name="" placeholder="" value="홈페이지를 오픈했습니다." aria-label="공지사항 제목 입력"></td>                                                          
+                        </tr>
+                        <tr>                           
+                            <td>
+                                
+                                <div class="filebox d-flex align-item-center">
+                                    <input type="text" class="form_control mr10" id="" name="" placeholder="" value="홈페이지를 오픈했습니다." aria-label="공지사항 제목 입력">
+                                    <label for="file">파일선택</label> 
+                                    <input type="file" id="file">
+                                </div>
+                            </td>                                                          
+                        </tr>
+                        <tr>                           
+                            <td>
+                                <textarea name="" id="" cols="30" rows="10" class="form_control">홈페이지를 오픈했습니다. 홈페이지를 오픈했습니다.</textarea>
+                            </td>                                                          
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+                <div class="d-flex justify-content-center mt30">
+                    <button type="button" class="btn01 mr10"><span>등록</span></button>
+                    <button type="button" class="btn01 btn-gray"><span>취소</span></button>
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+     $(function () {
+      $("#sidebar").load("admin_sidebar.html");
+    });
+  </script>
+</html>

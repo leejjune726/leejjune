@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HUKI admin</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+		
+    <main id="admin_setting01">
+        <section class="section_grid">
+            <div id="sidebar"></div>
+
+            <div class="section_right">                
+                <h2 class="ti1 mb20">메뉴 관리</h2>            
+
+                <table class="table input_table">
+                    <caption class="sr_only">지역, 제품, 구매평, 기자단</caption>
+                    <colgroup>
+                        <col width="20%">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="col">지역</th>
+                            <td>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="맛집" placeholder="" aria-label="지역별 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="뷰티" placeholder="" aria-label="지역별 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="숙박" placeholder="" aria-label="지역별 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="문화" placeholder="" aria-label="지역별 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="기타" placeholder="" aria-label="지역별 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">썸네일</th>
+                            <td>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="생활&건강" placeholder="" aria-label="썸네일 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="디지털&가전" placeholder="" aria-label="썸네일 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="패션&미용" placeholder="" aria-label="썸네일 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="식품" placeholder="" aria-label="썸네일 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10">
+                                    <input type="text" class="form_control input_control" id="" value="기타" placeholder="" aria-label="썸네일 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">구매평</th>
+                            <td>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="구매평" placeholder="" aria-label="구매평 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10">
+                                    <input type="text" class="form_control input_control" id="" value="구매평+리뷰" placeholder="" aria-label="구매평 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">기자단</th>
+                            <td>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="원고형" placeholder="" aria-label="기자단 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="참여형" placeholder="" aria-label="기자단 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                                <div class="d-flex gap10 mb10">
+                                    <input type="text" class="form_control input_control" id="" value="회수형" placeholder="" aria-label="기자단 카테고리" style="max-width: 160px;">
+                                    <button type="button" class="btn03 btn-copy"><span>복제</span></button>
+                                    <button type="button" class="btn03 btn-delete"><span>삭제</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                            </td>
+                        </tr>                        
+
+                    </tbody>
+                </table>                
+                
+                <div class="d-flex mt60 justify-content-center">
+                    <button type="button" class="btn01 mr10"><span>저장</span></button>
+                    <button type="button" class="btn01 btn-gray"><span>취소</span></button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+     $(function () {
+      $("#sidebar").load("admin_sidebar.html");
+    });
+  </script>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HUKI admin</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+		
+    <main id="admin_setting02">
+        <section class="section_grid">
+            <div id="sidebar"></div>
+
+            <div class="section_right">
+                <div class="d-flex justify-content-between align-item-end mb20">
+                    <h2 class="ti1" style="width: 100%;">배너 관리</h2>
+                    <div class="d-flex justify-content-end" style="width: 100%;">    
+                        <button type="button" class="btn01 mr10" onclick="addSearchKey()"><span>추가</span></button>                    
+                        <button type="button" class="btn01 btn-gray" onclick="delSearchKey()"><span>삭제</span></button>                                            
+                    </div>
+                </div>                               
+
+                <table class="table input_table">
+                    <caption class="sr_only">배너썸네일</caption>
+                    <colgroup>
+                        <col width="20%">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="col">1</th>
+                            <td class="banner_setting">
+                                <div class="d-flex align-item-center gap10">
+                                    <div class="input_check">
+                                        <input type="checkbox" class="" value="" id="check_01_1" name="check_01">
+                                        <label for="check_01_1"></label>
+                                    </div>
+                                    <div class="banner_area"></div>
+                                    <button type="button" class="btn03 btn-modify"><span>수정</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">2</th>
+                            <td class="banner_setting">
+                                <div class="d-flex align-item-center gap10">
+                                    <div class="input_check">
+                                        <input type="checkbox" class="" value="" id="check_01_2" name="check_01">
+                                        <label for="check_01_2"></label>
+                                    </div>
+                                    <div class="banner_area"></div>
+                                    <button type="button" class="btn03 btn-modify"><span>수정</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">3</th>
+                            <td class="banner_setting">
+                                <div class="d-flex align-item-center gap10">
+                                    <div class="input_check">
+                                        <input type="checkbox" class="" value="" id="check_01_3" name="check_01">
+                                        <label for="check_01_3"></label>
+                                    </div>
+                                    <div class="banner_area"></div>
+                                    <button type="button" class="btn03 btn-modify"><span>수정</span></button>
+                                    <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                                    <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>                
+                
+                <div class="d-flex mt60 justify-content-center">
+                    <button type="button" class="btn01 mr10"><span>저장</span></button>
+                    <button type="button" class="btn01 btn-gray"><span>취소</span></button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+     $(function () {
+      $("#sidebar").load("admin_sidebar.html");
+    });
+  </script>
+</html>

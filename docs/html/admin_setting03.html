@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HUKI admin</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+		
+    <main id="admin_setting03">
+        <section class="section_grid">
+            <div id="sidebar"></div>
+
+            <div class="section_right">
+                <h2 class="ti1" style="width: 100%;">위젯 관리</h2>                           
+
+               <div class="widget_wrap">
+
+                <div class="widget_box"><img src="../img/img-widget.svg" alt="위젯 이미지"></div>
+                <div class="widget_info">
+                    <input type="text" class="form_control mb10" id="" value="" placeholder="연결 URL 주소" aria-label="위젯 연결 url 주소 입력">
+                    <div class="d-flex gap10">
+                        <div class="filebox">
+                            <label for="file">이미지 변경</label> 
+                            <input type="file" id="file">
+                        </div>
+                        <button type="button" class="btn03 btn-hidden"><span>숨김</span></button>
+                        <button type="button" class="btn03 btn-show"><span>노출</span></button>
+                    </div>
+                </div> 
+               </div>
+                
+                <div class="d-flex mt60 justify-content-center">
+                    <button type="button" class="btn01 mr10"><span>저장</span></button>
+                    <button type="button" class="btn01 btn-gray"><span>취소</span></button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+     $(function () {
+      $("#sidebar").load("admin_sidebar.html");
+    });
+  </script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="../script/jquery-3.6.0.js"></script>
+
+</head>
+<body>
+    <header id="header"></header>
+    <main id="mypage_point_out">
+        <div class="mypage_top">
+            <div class="wd120">
+                <ul>
+                    <li class="mypage_profile">
+                        <img src="../img/header_profile.png" alt="">
+                        <span class="mypage_name"><span class="strong">후키짱</span>님 반갑습니다.</span></li>
+                    <li>포인트 <span class="blue point">5,000P</span></li>
+                    <li class="member"><img src="../img/mypage_new.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wd120">
+            <div class="mypage_grid">
+                <div class="mypage_grid_left">
+                    <ul>
+                        <div class="mypage_left_tit"><i class="fa-regular fa-bookmark tit_icon"></i>캠페인</div>
+                        <li><a href="../html/mypage_campaign.html"><span class="strong600">나의 캠페인</span><span class="gray">164</span></a></li>
+                        <li><a href="../html/mypage_content.html"><span class="strong600">등록 콘텐츠</span><span class="gray">153</span></a></li>
+                        <li class="active"><a href="#"><span class="strong600">받은 메시지</span><span></span></a></li>
+                    </ul>
+                    <ul>
+                        <div class="mypage_left_tit"><i class="fa-regular fa-user tit_icon"></i>계정관리</div>
+                        <li><a href="#"><span class="strong600">내 정보</span></a></li>
+                        <li><a href="#"><span class="strong600">나의 포인트</span><span class="gray">5,000</span></a></li>
+                    </ul>
+                    <ul>
+                        <div class="mypage_left_tit"><i class="fa-solid fa-headset tit_icon"></i>고객센터</div>
+                        <li><a href="#"><span class="strong600">1:1 문의</span></a></li>
+                        <li><a href="#"><span class="strong600">공지사항</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="mypage_grid_right">
+                    <div class="mypage_right_tit">나의 포인트</div>
+
+                    <div class="point_out_text">
+                        <p class="point strong500">포인트 출금신청 전 확인해주세요!</p>
+
+                        <p class="point_gray">포인트가 10,000원 이상 모이면 출금 신청을 할 수 있으며 출금 시 금융 수수료 및 세금을 차감하고 지급됩니다.</p>
+                        <p class="point_gray">포인트는 한 달에 3번 신청이 가능하며, 캠페인 마감 으로 부터 7일 후 포인트 지급 및 출금 신청 가능 (지급일이 공휴일인 경우, 다음 영업일에 지급됩니다.)</p>
+                        <p class="point_gray">포인트 지급까지는 신청일로부터  3~5 영업일 소요됩니다.</p>
+                        <p class="point_gray">출금 금액은 지정이 불가하며, 신청 정보와 금액 수정을 원하실 경우, 앞선 신청을 취소하시고 다시 신청해 주세요.</p>
+                        <p class="point_gray">입금계좌의 예금주와 회원 정보의 이름이 동일해야 하며, 실명이어야 포인트가 지급됩니다.</p>
+                        <p class="point_gray">입금액은 관련 법상 포인트는 사업소득에 따른 세금 3.3%를 공제하고 입금됩니다.</p>
+                        <p class="point_gray">출금 신청한 금액에 대해서는 입금된 날짜를 기준으로 소득이 발생한 것으로 신고됩니다.</p>
+                    </div>
+
+                    <div class="point_out_grid">
+                        <ul>
+                            <li class="strong500">현재 포인트</li>
+                            <li>
+                                <form action="">
+                                    <input type="text" class="common_input">
+                                </form>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="strong500">신청 금액</li>
+                            <li>
+                                <form action="">
+                                    <input type="text" class="common_input" placeholder="최소 출금 가능 포인트는 10,000P입니다.">
+                                </form>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="strong500">예금주</li>
+                            <li>
+                                <form action="">
+                                    <input type="text" class="common_input">
+                                </form>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="strong500">입금 계좌</li>
+                            <li>
+                                <form class="input80">
+                                    <select class="bank" name="" id="">
+                                        <option value="" disabled selected hidden>입금할 은행</option>
+                                        <option value="신한은행">신한은행</option>
+                                        <option value="국민은행">국민은행</option>
+                                        <option value="카카오뱅크">카카오뱅크</option>
+                                        <option value="농협은행">농협은행</option>
+                                    </select>
+                                    <input type="text" class="common_input input80" placeholder="'-'없이 입력해주세요">
+                                </form>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="strong500">주민등록번호</li>
+                            <li>
+                                <form class="input50">
+                                    <input type="text" class="common_input input50">
+                                    -
+                                    <input type="text" class="common_input input50">
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="out_btn">
+                        <button>출금 신청</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+</body>
+<script src="../script/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/83785dfa72.js" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    });
+</script>
+</html>

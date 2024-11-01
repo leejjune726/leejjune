@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>HUKI admin</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/mobile.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="../script/jquery-3.6.0.js"></script>
+	
+  </head>
+  <body>
+		
+    <main id="admin_notice01">
+        <section class="section_grid">
+            <div id="sidebar"></div>
+
+            <div class="section_right">                
+                <h2 class="ti1">1:1문의</h2>
+                
+                <div class="table-wrap mt20 pc_only">
+                    <table class="table">
+                        <caption class="sr_only">1:1문의 항목 : 제목, 닉네임, 날짜</caption>
+                        <colgroup>
+                            <col>       
+                            <col width="10%">       
+                            <col width="8%">                                                 
+                        </colgroup>
+                        <thead>
+                            <tr>                               
+                                <th scope="row">문의드립니다.</th>
+                                <th scope="row">룰루</th>
+                                <th scope="row" class="txt02-gray">2024.07.05</th>                            
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>                               
+                                <td colspan="3">
+                                    문의 드립니다.
+                                </td>                                                               
+                            </tr>  
+                            <tr>
+                                <td colspan="3">
+                                    <textarea name="" id="" cols="30" rows="10" class="form_control">안녕하세요. 후키입니다. 문의내용에 대한 답변입니다.</textarea>
+                                </td>
+                            </tr>                          
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="d-flex justify-content-center mt30">
+                    <button type="button" class="btn01 mr10"><span>답변 등록</span></button>
+                    <button type="button" class="btn01 btn-gray"><span>목록보기</span></button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+  </body>
+  <script src="../script/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+     $(function () {
+      $("#sidebar").load("admin_sidebar.html");
+    });
+  </script>
+</html>
